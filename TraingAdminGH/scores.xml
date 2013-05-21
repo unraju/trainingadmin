@@ -1,0 +1,127 @@
+<rss version="2.0">
+	<channel>
+		<title>Cricinfo Live Scores</title>
+		<ttl>2</ttl>
+		<link>http://www.cricinfo.com</link>
+		<description>Latest scores from Cricinfo</description>
+		<copyright>(c)Cricinfo</copyright>
+		<language>en-gb</language>
+		<pubDate>Wed, 11 Jan 2012 15:40:02 +0000</pubDate>
+		<item>
+			<title>
+				Mashonaland Eagles 39/3 & 238/10 * v Mountaineers 219/10 & 55/10
+			</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/530710.html?CMP=OTC-RSS
+			</link>
+			<description>
+				Mashonaland Eagles 39/3 & 238/10 * v Mountaineers 219/10 & 55/10
+			</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/530710.html
+			</guid>
+		</item>
+		<item>
+			<title>
+				Mid West Rhinos 444/8 v Southern Rocks 178/10 & 313/10 *
+			</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/530711.html?CMP=OTC-RSS
+			</link>
+			<description>
+				Mid West Rhinos 444/8 v Southern Rocks 178/10 & 313/10 *
+			</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/530711.html
+			</guid>
+		</item>
+		<item>
+			<title>
+				Haryana 15/2 & 97/10 * v Rajasthan 89/10 & 192/10
+			</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/522986.html?CMP=OTC-RSS
+			</link>
+			<description>
+				Haryana 15/2 & 97/10 * v Rajasthan 89/10 & 192/10
+			</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/522986.html
+			</guid>
+		</item>
+		<item>
+			<title>Mumbai 121/6 * v Tamil Nadu 359/10</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/522987.html?CMP=OTC-RSS
+			</link>
+			<description>Mumbai 121/6 * v Tamil Nadu 359/10</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/522987.html
+			</guid>
+		</item>
+		<item>
+			<title>Pakistan Cricket Board XI 23 * v England XI 269/9</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/531626.html?CMP=OTC-RSS
+			</link>
+			<description>Pakistan Cricket Board XI 23 * v England XI 269/9</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/531626.html
+			</guid>
+		</item>
+		<item>
+			<title>
+				South Africa Under-19s 202/1 * v Zimbabwe Under-19s 197/8
+			</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/545170.html?CMP=OTC-RSS
+			</link>
+			<description>
+				South Africa Under-19s 202/1 * v Zimbabwe Under-19s 197/8
+			</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/545170.html
+			</guid>
+		</item>
+		<item>
+			<title>South Africa 245/3 * v Sri Lanka</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/514035.html?CMP=OTC-RSS
+			</link>
+			<description>South Africa 245/3 * v Sri Lanka</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/514035.html
+			</guid>
+		</item>
+		<item>
+			<title>Canada v Windward Islands</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/538736.html?CMP=OTC-RSS
+			</link>
+			<description>Canada v Windward Islands</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/538736.html
+			</guid>
+		</item>
+		<item>
+			<title>Leeward Islands v Trinidad & Tobago</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/538737.html?CMP=OTC-RSS
+			</link>
+			<description>Leeward Islands v Trinidad & Tobago</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/538737.html
+			</guid>
+		</item>
+		<item>
+			<title>Melbourne Renegades v Brisbane Heat</title>
+			<link>
+				http://www.cricinfo.com/ci/engine/match/524938.html?CMP=OTC-RSS
+			</link>
+			<description>Melbourne Renegades v Brisbane Heat</description>
+			<guid>
+				http://www.cricinfo.com/ci/engine/match/524938.html
+			</guid>
+		</item>
+	</channel>
+</rss>

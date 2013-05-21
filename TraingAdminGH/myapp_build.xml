@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<project name="myapp" default="Create-War">
+	
+	<property file="myapp_build.properties"/>
+	
+	
+	<target name="clean">
+				<delete dir="${classes}"/>
+				<delete dir="${trunk}"/>
+			<echo>Clean Project Complete!</echo>		
+	</target>
+	
+	<target name="init" depends="clean" >
+			<mkdir dir="${trunk}"/>
+			<mkdir dir="${classes}"/>
+			<echo>Compilation Init Target! </echo>
+		</target>
+	
+		
+	 <path id="lib.path.ref">
+	    <fileset dir="${lib.home}" includes="*.jar"/>
+	 	<fileset dir="${tomcat.lib}" includes="*.jar"/>
+	  </path>
+	
+	<target name="compile" depends="clean,init">
+		<javac srcdir="${src}" destdir="${classes}" >
+			<classpath>
+				<path refid="lib.path.ref"></path>
+			</classpath>
+		</javac>
+		
+	<copy todir="${classes}">
+		<fileset dir="${src}" includes="**/*.xml" />
+ 	</copy>	
+
+	<echo>Compilation Complete! </echo>
+	</target>
+	
+	<target name="Create-War" depends="compile">
+			<delete file="${trunk}/myapp.war"/>
+			<!-- <copy file="${app}/src/hibernate.cfg.xml" todir="${classes}"  />
+			<copy file="${app}/src/log4j.xml" todir="${classes}"  />  -->
+			<copy file="${app}/src/ApplicationResources.properties" todir="${classes}"  />
+			
+			<war destfile="${trunk}/myapp.war"  webxml="${app}/WebContent/WEB-INF/web.xml" manifest="${app}/WebContent/META-INF/MANIFEST.MF">
+			
+				<fileset dir="${web.home}">
+				            <include name="**/**"  />
+				            <exclude name="**/WEB-INF/web.xml" />
+				          <exclude name="**/WEB-INF/lib/*.jar" /> 
+				</fileset>
+				
+				<fileset dir="${trunk}">
+				            <include name="**/**"  />
+							<exclude name="*.war"  />
+				</fileset>
+				<lib dir="${lib.home}" includes="*.jar" >
+					<exclude name="mysql.jar"/>
+				</lib>
+			</war>
+			<echo>Create War file Done! </echo>
+		</target>
+	
+	<macrodef name="copyData">
+		<attribute name="src" default=""/>
+	    <attribute name="dest" default=""/>
+	    <sequential>
+	      <echo>***********************************************************************</echo>
+	      <echo>* Copy data                                                            </echo>
+	      <echo>***********************************************************************</echo>  
+	     <copydir  src="@{src}" dest="@{dest}" />
+	    </sequential>
+	  </macrodef> 
+	
+	<target name="Copy-War">
+		<delete file="${tomcat.home}/webapps/myapp.war"/>	
+		<copy file="${trunk}/myapp.war" todir="${tomcat.home}/webapps"/>
+	</target>
+	
+	<target name="Start-MyApp" depends="tomcat-start">
+		</target>
+		
+	
+	<target name="tomcat-start">
+    <java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+    </java>
+	</target>
+
+	<target name="tomcat-stop">
+    <java jar="${tomcat.home}/bin/bootstrap.jar" fork="true">
+        <jvmarg value="-Dcatalina.home=${tomcat.home}"/>
+        <arg line="stop"/>
+    </java>
+    </target>
+    
+    <target name="Tomcat-Clean">
+    	<delete dir="${tomcat.home}/webapps/myapp"/>	
+    </target>
+    
+    <target name="Redeploy" depends="tomcat-stop,Create-War,Copy-War,deploy,tomcat-start">
+    </target>
+    
+    <target name="deploy" 
+    description="unwar into the servlet container's deployment directory">
+          
+    <unwar src="${tomcat.home}/webapps/myapp.war" 
+        dest="${tomcat.home}/webapps/myapp"/>
+   </target>
+   
+</project>
