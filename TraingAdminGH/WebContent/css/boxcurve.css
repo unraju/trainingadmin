@@ -1,0 +1,32 @@
+
+.tLeft {
+background-color:#FFFFFF;
+background-image:url(images/tLeft.gif);
+background-position:top left;
+margin:0px; padding:0px;
+background-repeat:no-repeat;
+}
+
+.tRight
+{
+background-image:url(images/tRight.gif);
+background-position:top right;
+margin:0px; padding:0px;
+background-repeat:no-repeat;
+}
+
+.bRight
+{
+background-image:url(images/bRight.gif);
+background-position:bottom right;
+margin:0px; padding:0px;
+background-repeat:no-repeat;
+}
+
+.bLeft
+{
+background-image:url(images/bLeft.gif);
+background-position:bottom left;
+margin:0px; padding:0px;
+background-repeat:no-repeat;
+}

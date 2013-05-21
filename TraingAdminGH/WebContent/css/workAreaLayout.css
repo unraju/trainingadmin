@@ -1,0 +1,448 @@
+.pageContainer {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 100%; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.menuWorkareaRow {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 1000px; BORDER-BOTTOM: red 0px solid; POSITION: relative
+}
+.container {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 190px; FLOAT: left; BORDER-LEFT: green 0px solid; WIDTH: 820px; BORDER-BOTTOM: green 0px solid; TOP: 0px
+}
+.workareaHeaderBox {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 820px; BORDER-BOTTOM: red 0px solid; POSITION: relative; TOP: 2px; HEIGHT: 10px
+}
+.workareaHeader {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 15px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; TOP: 0px; HEIGHT: 20px; BACKGROUND-COLOR: #555555
+}
+.displaypanelborder {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 804px; BORDER-BOTTOM: #888888 1px solid; POSITION: absolute; TOP: 24px; HEIGHT: 28px
+}
+.displayPanelBorderRed {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; LEFT: 0px; BORDER-LEFT: red 1px solid; WIDTH: 804px; BORDER-BOTTOM: red 1px solid; POSITION: relative; TOP: 3px
+}
+.blankRowBetHeaderAndContent {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 15px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative
+}
+.blankRowBetHeaderAndDisplayTagList {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 15px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; TOP: 4px
+}
+.rowsPanel {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 1px solid; POSITION: relative; TOP: 4px
+}
+.rowsPanelMandatoryField {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 15px; BORDER-LEFT: #888888 1px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 1px solid; POSITION: relative;
+}
+.rowsPanelWithBgColor {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 1px solid; POSITION: relative; TOP: 4px; BACKGROUND-COLOR: #cccccc
+}
+.rowsPanelRed {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; LEFT: 0px; BORDER-LEFT: red 1px solid; WIDTH: 810px; BORDER-BOTTOM: red 1px solid; POSITION: relative; TOP: 4px
+}
+.rowsPanelNoBorder {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 0px solid; POSITION: relative; TOP: 4px
+}
+.rowsPanelAfterError {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 1px solid; POSITION: relative; TOP: 8px
+}
+.rowsPanelAfterErrorNoBorder {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 0px solid; POSITION: relative; TOP: 8px
+}
+.rowsPanelAfterTabs {
+	BORDER-RIGHT: #888888 1px solid; BORDER-TOP: #888888 1px solid; LEFT: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 1px solid; POSITION: relative; TOP: 0px
+}
+.tableData {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 0px solid; POSITION: relative
+}
+.pageRow {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 28px
+}
+.pageRow3px {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 3px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative
+}
+.pageRow40px {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 40px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px
+}
+.pageRow80px {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 80px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px
+}
+.pageRow120px {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 120px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px
+}
+.pageRowWid100 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 28px
+}
+.pageRowHt16 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 16px
+}
+.pageRowTabs {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 15px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 50px
+}
+.pageRowTabsTable {
+	BORDER-RIGHT: red 0px solid;
+	BORDER-TOP: red 0px solid;
+	LEFT: 15px;
+	BORDER-LEFT: red 0px solid;
+	BORDER-BOTTOM: red 0px solid;
+	POSITION: relative;
+	WIDTH: 100%;
+}
+.pageRowHt20 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px
+}
+.pageRowHt20BgColorValue {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px; BACKGROUND-COLOR: #eeeeee
+}
+.pageRowHt20BgColorLabel {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px; BACKGROUND-COLOR: #d1d1d1
+}
+.pageRowHt20BgColBigTit2 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px; BACKGROUND-COLOR: #555555
+}
+.pageRowBox {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 27px
+}
+.pageRowBox2 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 10px
+}
+.pageRowBox2NoBox {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 4px; HEIGHT: 10px
+}
+.pageRowHt80 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 80px
+}
+.rowLabelHt80 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 300px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 80px
+}
+.rowLabelBoxHt80 {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 0px; BORDER-LEFT: green 0px solid; WIDTH: 300px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 79px; BACKGROUND-COLOR: #d1d1d1
+}
+.rowLabelBox2Ht80 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 300px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 27px; HEIGHT: 10px; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: right
+}
+.rowValueHt80 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 80px
+}
+.rowValueBoxHt80 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 79px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBox2Ht80 {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; BORDER-LEFT: green 0px solid; WIDTH: 390px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 7px; HEIGHT: 10px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBox2Ht80Error {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 385px; BORDER-LEFT: green 0px solid; WIDTH: 120px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 10px; HEIGHT: 25px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBox2Ht80ErrorLargeText {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 335px; BORDER-LEFT: green 0px solid; WIDTH: 170px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 10px; HEIGHT: 60px; BACKGROUND-COLOR: #eeeeee
+}
+.rowLabel {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 300px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px
+}
+.rowLabelWithBgColor {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 300px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px; BACKGROUND-COLOR: #d1d1d1
+}
+.rowLabelAfterTableData {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 300px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px; BACKGROUND-COLOR: #d1d1d1
+}
+.rowLabelBox {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 0px; BORDER-LEFT: green 0px solid; WIDTH: 300px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 27px; BACKGROUND-COLOR: #d1d1d1
+}
+.rowLabelBox2 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 300px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 4px; HEIGHT: 10px; TEXT-ALIGN: right
+}
+.rowValue {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px
+}
+.rowValueWithBgColor {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueWithBgColorWid100 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueAfterTableData {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 28px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBox {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 27px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBoxErrorMsg {
+	WIDTH: 100%; POSITION: absolute; TOP: 1px; HEIGHT: 27px; float:left;
+}
+.rowValueBoxWid100 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 27px; BACKGROUND-COLOR: #eeeeee
+}
+.rowValueBox2ErrorMsg {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 195px; BORDER-LEFT: red 0px solid; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 10px
+}
+.rowValueBox2 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 510px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 4px; HEIGHT: 10px
+}
+.rowValueBox2DropDown {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 510px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 10px
+}
+.rowValueBox2DropDownWid100 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 10px
+}
+.blankRowBetButtonsAndContent {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 803px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 20px
+}
+.blankRowBetButtonsAndContentHt10 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 803px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 10px
+}
+.buttonsPanel {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; BORDER-LEFT: green 0px solid; WIDTH: 100%; BORDER-BOTTOM: green 0px solid; POSITION: relative; HEIGHT: 40px
+}
+.firstOfOneButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 370px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 130px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 30px
+}
+.searchOfSearch {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 381px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 55px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.createOfCreate {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 382px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 53px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.activateOfActivate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 377px; BORDER-LEFT: red 0px solid; WIDTH: 64px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px
+}
+.deactivateOfDeativate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 368px; BORDER-LEFT: red 0px solid; WIDTH: 82px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px
+}
+.saveOfSave {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 390px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.backOfBack {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 390px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.nextOfNext {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 392px; BORDER-LEFT: red 0px solid; WIDTH: 34px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px
+}
+.okOfOK {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; LEFT: 398px; BORDER-LEFT: red 1px solid; WIDTH: 21px; BORDER-BOTTOM: red 1px solid; POSITION: absolute; TOP: 2px
+}
+.deleteOfDelete {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 384px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 50px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.importOfImport {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 382px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 53px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.addserviceOfAddService {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 360px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 97px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.cancelOfCancel {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 382px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 53px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.firstOfTwoButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 330px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 48px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.secondOfTwoButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 429px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 44px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.approveOfApproveReject {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 443px; BORDER-LEFT: red 0px solid; WIDTH: 68px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.rejectOfApproveReject {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 327px; BORDER-LEFT: red 0px solid; WIDTH: 49px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.modifyOfModifyDelete {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 332px; BORDER-LEFT: red 0px solid; WIDTH: 53px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.deleteOfModifyDelete {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 435px; BORDER-LEFT: red 0px solid; WIDTH: 50px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.backOfBackConfirm {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 333px; BORDER-LEFT: red 0px solid; WIDTH: 37px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.confirmOfBackConfirm {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 420px; BORDER-LEFT: red 0px solid; WIDTH: 65px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.backOfBackNext {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 348px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.nextOfBackNext {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 435px; BORDER-LEFT: red 0px solid; WIDTH: 34px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px
+}
+.backOfBackFinish {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 342px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.finishOfBackFinish {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 429px; BORDER-LEFT: red 0px solid; WIDTH: 47px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px
+}
+.backOfBackSearch {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 338px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.searchOfBackSearch {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 427px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 55px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.saveOfSaveReset {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 342px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 37px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.resetOfSaveReset {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 429px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 46px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 2px
+}
+.updateOfUpdateCancel {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 435px; BORDER-LEFT: red 0px solid; WIDTH: 55px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.cancelOfUpdateCancel {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 330px; BORDER-LEFT: red 0px solid; WIDTH: 53px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.updateOfUpdateActivate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 429px; BORDER-LEFT: red 0px solid; WIDTH: 55px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.activateOfUpdateActivate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 324px; BORDER-LEFT: red 0px solid; WIDTH: 64px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.updateOfUpdateDeactivate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 420px; BORDER-LEFT: red 0px solid; WIDTH: 55px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.deactivateOfUpdateDeactivate {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 315px; BORDER-LEFT: red 0px solid; WIDTH: 82px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.firstOfThreeButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 293px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 35px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.secondOfThreeButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 378px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 50px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.thirdOfThreeButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 478px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 50px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.approveOfApproveRejectHold {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 500px; BORDER-LEFT: red 0px solid; WIDTH: 68px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px
+}
+.rejectOfApproveRejectHold {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; LEFT: 283px; BORDER-LEFT: blue 0px solid; WIDTH: 49px; BORDER-BOTTOM: blue 0px solid; POSITION: absolute; TOP: 0px
+}
+.holdOfApproveRejectHold {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 401px; BORDER-LEFT: green 0px solid; WIDTH: 34px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 0px
+}
+.firstOfFourButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 238px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 35px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.secondOfFourButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 323px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 68px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.thirdOfFourButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 443px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 48px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.fourOfFourButtons {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 541px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 33px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px
+}
+.edit {
+	BORDER-RIGHT: #ff0000 0px solid; BORDER-TOP: #ff0000 0px solid; LEFT: 760px; BORDER-LEFT: #ff0000 0px solid; WIDTH: 50px; BORDER-BOTTOM: #ff0000 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 10px; BACKGROUND-COLOR: #555555
+}
+.buttonAdd {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 320px; BORDER-LEFT: #888888 0px solid; WIDTH: 70px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 20px; HEIGHT: 20px
+}
+.buttonRemove {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 320px; BORDER-LEFT: #888888 0px solid; WIDTH: 70px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 40px; HEIGHT: 20px
+}
+.roles {
+	BORDER-RIGHT: #dddddd 1px solid; BORDER-TOP: #dddddd 1px solid; LEFT: 0px; OVERFLOW: scroll; BORDER-LEFT: #dddddd 1px solid; WIDTH: 550px; BORDER-BOTTOM: #dddddd 1px solid; POSITION: absolute; TOP: 20px; HEIGHT: 160px
+}
+.pageRowHt160 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; HEIGHT: 151px
+}
+.rowValueHt160 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 300px; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 151px
+}
+.rowLabelHt160 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 300px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 151px
+}
+.rowLabelBoxHt160 {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 0px; BORDER-LEFT: green 0px solid; WIDTH: 300px; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 150px; BACKGROUND-COLOR: #d1d1d1
+}
+.rowLabelBox2Ht160 {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 300px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 60px; HEIGHT: 10px; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: right
+}
+.rowValueBoxHt160 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; WIDTH: 510px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 150px; BACKGROUND-COLOR: #eeeeee
+}
+.buttonAddHt160 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 180px; BORDER-LEFT: #888888 0px solid; WIDTH: 70px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 40px; HEIGHT: 20px
+}
+.buttonRemoveHt160 {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 180px; BORDER-LEFT: #888888 0px solid; WIDTH: 70px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 80px; HEIGHT: 20px
+}
+.rowValueBox2Ht80Error1 {
+	BORDER-RIGHT: green 0px solid; BORDER-TOP: green 0px solid; LEFT: 260px; BORDER-LEFT: green 0px solid; BORDER-BOTTOM: green 0px solid; POSITION: absolute; TOP: 40px; HEIGHT: 30px; BACKGROUND-COLOR: #eeeeee
+}
+.calendarImgClass {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; BORDER-LEFT: #888888 0px solid; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 1px; HEIGHT: 20px
+}
+.rowValueBoxCalenderError {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 145px; BORDER-LEFT: red 0px solid; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 2px; HEIGHT: 10px
+}
+#messagedefinitionleft {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 0px solid; LEFT: 0px; BORDER-LEFT: #000 0px solid; WIDTH: 7px; BORDER-BOTTOM: #000 0px solid; POSITION: absolute; TOP: 21px; HEIGHT: 28px
+}
+#messagedefinitionmid {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 0px solid; LEFT: 7px; BORDER-LEFT: #000 0px solid; WIDTH: 202px; BORDER-BOTTOM: #000 0px solid; POSITION: absolute; TOP: 21px; HEIGHT: 28px
+}
+#messagedefinitionmidBox {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 0px solid; LEFT: 0px; BORDER-LEFT: #000 0px solid; WIDTH: 202px; BORDER-BOTTOM: #000 0px solid; POSITION: absolute; TOP: 4px; HEIGHT: 28px
+}
+#messagedefinitionright {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 0px solid; LEFT: 202px; BORDER-LEFT: #000 0px solid; WIDTH: 7px; BORDER-BOTTOM: #000 0px solid; POSITION: absolute; TOP: 21px; HEIGHT: 28px
+}
+
+img.g200 {/* scalable em size class 200 x 200 graphics */
+  width: 0.1em;
+  
+  }
+
+  img.dropcap-53 {/* scalable em 53 */
+  float: left; /* float that dropcap! */
+  width: 0.1em;
+  
+  }
+
+  img.g53 {/* scalable em 53 */
+  width: 0.6em;
+  height: 2.5em;
+  }
+
+
+  blockquote.float-left {/* floats in content div */
+  float: left;
+  width: 13.5em; /* "em size" is element dependent */
+  padding: 0.5em;
+  margin: 0 0.5em 0 0;
+  color: #000000;
+  background: #d1d1d1;
+ 
+  
+  }
+
+  blockquote span.cap-g {/* floats in blockquote */
+  float: left;
+  font-size: 1.7em;
+  padding: 0 0.15em;
+  margin: 0 0.15em -0.5em 0; /* negative bottom margin */
+  color: #000000;
+  background: #d1d1d1;
+  
+  }
+
+  blockquote.float-left strong {
+  color: #000000;
+  }
+
+  blockquote.float-left em {
+  color: #000000;
+  }
+
+  p.after-blockquote {
+  padding: 0em;
+  background: #d1d1d1;
+  }
+  
+  width35 {
+  	width: 35%;
+  }
+  width30 {
+  	width: 30%;
+  }
+  width100 {
+  	width: 100%;
+  }
+.workareaHeader1 {
+    BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: relative; TOP: 0px; HEIGHT: 20px; BACKGROUND-COLOR: #555555
+}  

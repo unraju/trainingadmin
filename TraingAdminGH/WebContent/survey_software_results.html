@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Survey Software</title>
+
+<META HTTP-EQUIV="Expires" CONTENT="Fri, Feb 22 2002 01:00:00 GMT">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+
+
+<script>
+
+function doit() {
+document.Survey_Software.poll_id.value = window.opener.document.StatPac_Survey_Software.poll_id.value;
+document.Survey_Software.ip_check.value = window.opener.document.StatPac_Survey_Software.ip_check.value;
+document.Survey_Software.cookie_check.value = window.opener.document.StatPac_Survey_Software.cookie_check.value;
+document.Survey_Software.time_out.value = window.opener.document.StatPac_Survey_Software.time_out.value;
+document.Survey_Software.view_results_before.value = window.opener.document.StatPac_Survey_Software.view_results_before.value;
+document.Survey_Software.view_results_after.value = window.opener.document.StatPac_Survey_Software.view_results_after.value;
+document.Survey_Software.view_mode.value = window.opener.document.StatPac_Survey_Software.view_mode.value;
+document.Survey_Software.sorted.value = window.opener.document.StatPac_Survey_Software.sorted.value;
+document.Survey_Software.graph.value = window.opener.document.StatPac_Survey_Software.graph.value;
+document.Survey_Software.graph_width.value = window.opener.document.StatPac_Survey_Software.graph_width.value;
+document.Survey_Software.graph_bgColor.value = window.opener.document.StatPac_Survey_Software.graph_bgColor.value;
+document.Survey_Software.graph_color.value = window.opener.document.StatPac_Survey_Software.graph_color.value;
+document.Survey_Software.font_name.value = window.opener.document.StatPac_Survey_Software.font_name.value;
+document.Survey_Software.font_size.value = window.opener.document.StatPac_Survey_Software.font_size.value;
+document.Survey_Software.title_bar.value = window.opener.document.StatPac_Survey_Software.title_bar.value;
+document.Survey_Software.vote.value = window.opener.document.StatPac_Survey_Software.vote.value;
+document.Survey_Software.question.value = window.opener.document.StatPac_Survey_Software.question.value;
+document.Survey_Software.choices.value = window.opener.document.StatPac_Survey_Software.choices.value;
+document.Survey_Software.submit();
+}
+
+</script>
+
+</head>
+
+<body onLoad="doit()">
+
+<p><font face="Arial" size="2">Please wait...</font></p>
+
+<form name="Survey_Software" action="http://www.statpac.com/cgi-bin/online_survey_software.pl" method="POST">
+
+<input type="hidden" name="poll_id" value="">
+<input type="hidden" name="ip_check" value="">
+<input type="hidden" name="cookie_check" value="">
+<input type="hidden" name="time_out" value="">
+<input type="hidden" name="view_results_before" value="">
+<input type="hidden" name="view_results_after" value="">
+<input type="hidden" name="view_mode" value="">
+<input type="hidden" name="sorted" value="">
+<input type="hidden" name="graph" value="">
+<input type="hidden" name="graph_width" value="">
+<input type="hidden" name="graph_bgColor" value="">
+<input type="hidden" name="graph_color" value="">
+<input type="hidden" name="font_name" value="">
+<input type="hidden" name="font_size" value="">
+<input type="hidden" name="title_bar" value="">
+<input type="hidden" name="vote" value="">
+<input type="hidden" name="question" value="">
+<input type="hidden" name="choices" value="">
+</form>
+
+</body>
+
+</html>

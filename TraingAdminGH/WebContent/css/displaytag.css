@@ -1,0 +1,99 @@
+TABLE {
+	BORDER-RIGHT: red 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: red 0px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: red 0px solid; WIDTH: 100%; PADDING-TOP: 0px; BORDER-BOTTOM: red 0px solid
+}
+.eprtable {
+	BORDER-RIGHT: #888888 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #888888 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #888888 1px solid; WIDTH: 100%; PADDING-TOP: 0px; BORDER-BOTTOM: #888888 1px solid
+}
+TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+THEAD TR {
+	BACKGROUND-COLOR: #cccccc
+}
+TH.sorted {
+	BACKGROUND-COLOR: #cccccc
+}
+TH A {
+	COLOR: black
+}
+TH A:visited {
+	COLOR: black
+}
+TH A:hover {
+	COLOR: black; TEXT-DECORATION: underline
+}
+TH.sorted A {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+TH.sortable A {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+TR.odd {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.odd A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.odd A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+TR.tableRowEven {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.even {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.tableRowEven A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.even A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+TR.tableRowEven A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+TR.even A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+DIV.exportlinks {
+	BORDER-RIGHT: #999 1px dotted; PADDING-RIGHT: 0px; BORDER-TOP: #999 1px dotted; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #999 1px dotted; WIDTH: 79%; PADDING-TOP: 0px; BORDER-BOTTOM: #999 1px dotted; BACKGROUND-COLOR: #eee
+}
+SPAN.export {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; CURSOR: pointer; PADDING-TOP: 0px
+}
+SPAN.pagebanner {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #555555; TEXT-DECORATION: none
+}
+SPAN.pagelinks {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; WIDTH: 100%; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #555555; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+SPAN.pagelinks A {
+	COLOR: white
+}
+SPAN.pagelinks A:visited {
+	COLOR: white
+}
+#gridCell {
+	COLOR: #000000
+}
+TD.gridCell A {
+	COLOR: #000000
+}
+#totalresults {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 403px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 10px; BACKGROUND-COLOR: #555555
+}
+#noresults {
+	BORDER-RIGHT: #888888 0px solid; BORDER-TOP: #888888 0px solid; LEFT: 0px; BORDER-LEFT: #888888 0px solid; WIDTH: 810px; BORDER-BOTTOM: #888888 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 10px
+}
+#pages {
+	BORDER-RIGHT: blue 0px solid; BORDER-TOP: blue 0px solid; LEFT: 403px; BORDER-LEFT: blue 0px solid; WIDTH: 407px; BORDER-BOTTOM: blue 0px solid; POSITION: absolute; TOP: 0px; HEIGHT: 10px; BACKGROUND-COLOR: #555555; TEXT-ALIGN: right
+}
+#resultslist {
+	BORDER-RIGHT: red 0px solid; BORDER-TOP: red 0px solid; LEFT: 0px; BORDER-LEFT: red 0px solid; WIDTH: 810px; BORDER-BOTTOM: red 0px solid; POSITION: absolute; TOP: 19px
+}
+#searchresults {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; LEFT: 0px; BORDER-LEFT: red 1px solid; WIDTH: 100%; BORDER-BOTTOM: red 1px solid; POSITION: absolute; TOP: 20px
+}

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!-- Tiles Definition file for EPR WorkFlow application -->
+
+<tiles-definitions>
+	<!-- Home Tile definitions -->
+
+
+	<definition name="tilesLoginPage" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/loginipl.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesIPL12Index" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/ipl11index.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+	
+	<definition name="tilesWCIndex" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/wc11index.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesIPLLoginPage" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/loginipl.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesNewRegistration" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/newuserlogin.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesForgotPwd" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/forgotpassword.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesHome" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/viewexp.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+
+	</definition>
+
+	<definition name="tilesChangePassword" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/changepwd.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateUserProfile" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/updateuserprofile.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<!-- ############### Manage Users Start ################### -->
+
+	<definition name="tilesManageUsers" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/manageusers.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateUser" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/updateuser.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageRoles" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/manageroles.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateRole" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/updaterole.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageActivities" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/manageactivities.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesAddActivity" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/addactivity.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateActivities" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../common/ui/user/updateactivities.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<!-- ############### Manage Users End ################### -->
+
+
+	<!-- ############### Manage Players Start ################### -->
+
+	<definition name="tilesManagePlayers" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/player/manageplayers.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesAddUpdatePlayer" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/player/updateplayer.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+
+	<!-- ############### Manage Players End ################### -->
+
+
+	<!-- ############### Manage Team Start ################### -->
+
+	<definition name="tilesViewRules" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/cricrules.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageCoreTeams" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/managecoreteams.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateCoreTeam" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/updatecoreteams.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewCoreTeams" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewcoreteams.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewCoreTeamDetails" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewcoreteamplayerdetails.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageUserTeam" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/manageuserteam.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesCreateUserTeam" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/createuserteam.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesChangeTeamPlayer" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/changeteamplayer.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageTeamShedule" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/manageteamshedule.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateTeamShedule" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/updateteamshedule.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewTeamShedule" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewteamshedule.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewMatchScores" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewmatchscores.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+	<definition name="tilesManageMatchScores" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/managematchscores.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesPopulateTeamPlayers" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/populatematchplayers.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesUpdateMatchScores" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/updatematchscores.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesMyTeamScore" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/myteamscore.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewTeamsScore" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewteamsscore.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewSubstituteHistory" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/viewsubstitutehistory.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesGeneratedScoreReportsHistory" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/team/generatedscorereport.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+	<definition name="tilesViewBestPlayers" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/player/viewbestplayers.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewPlayerMatchScores" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/player/viewplayermatchscores.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageSCTNews" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/common/managesctnews.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageSerieses" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/common/manageserieses.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+	
+	
+	<definition name="tilesManageQuiz" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../quiz/ui/managequiz.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesManageConfigData" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../cricket/ui/manageconfigdata.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesError" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../error.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<!-- Expensive Application Tile definations -->
+	<definition name="tilesHome" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/viewexp.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+	<definition name="tilesAddExp" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/addexp.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesMonthlyExp" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/monthly_report.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesYearlyExp" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/anual_report.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+	<definition name="tilesViewExp" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/viewexp.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+	<definition name="tilesUpdateExp" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/editExpDetails.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+	<definition name="tilesStaticData" page="/tiles/layout.jsp">
+		<put name="title" type="string" value="Welcome" />
+		<put name="header" value="../expensives_header.jsp" />
+		<put name="menu" value="../menu.jsp" />
+		<put name="body" value="../expenditure/addstaticdata.jsp" />
+		<put name="bottom" value="../footer.jsp" />
+	</definition>
+
+
+
+	<!-- END of Accessibility -->
+</tiles-definitions>

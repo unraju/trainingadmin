@@ -1,0 +1,194 @@
+.NHSVEFormLabel1 {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.NHSWelcomeBarLabel {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: bottom; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: arial; HEIGHT: 20px; BACKGROUND-COLOR: #99ccff; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSVEFormLabelLeftAlign {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSVEFormLabelLeftAlignBold {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSVEFormNoMatches {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSTopFrameWelcomeTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 26px; COLOR: #000000; TEXT-INDENT: 20px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSWAFrameWelcomeTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 24px; COLOR: #000000; TEXT-INDENT: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.FormTopContainer {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-WIDTH: 0px; BORDER-BOTTOM-COLOR: #ffffff; VERTICAL-ALIGN: top; BORDER-TOP-COLOR: #ffffff; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px; BORDER-RIGHT-COLOR: #ffffff
+}
+.NHSFormBigTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #ffffff; TEXT-INDENT: 5px; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #555555; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSFormBigTitleTwo {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #555555; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSFormBigTitleTwoMid {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #555555; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSFormBigTitleTwo A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #555555; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSFormPager {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #666666; TEXT-DECORATION: none
+}
+.NHSFormPager A {
+	COLOR: #eeeeee
+}
+.NHSFormActionSelectedReadableWhiteBg {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSFormActionSelectedReadable {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #cccccc; TEXT-DECORATION: none
+}
+.NHSFormActionSelectedReadable A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSFormActionContainer {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; VERTICAL-ALIGN: top; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #cccccc
+}
+.NHSFormActionSelectedLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+.NHSFormActionSelectedLabelLeftMenu {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none;text-align:center;margin-left:25px;
+}
+.NHSFormActionSelectedLabelLeftMenuApp {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none;text-align:center;margin-left:5px;
+}
+.NHSFormActionSelectedLabelImpFromDir {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none;text-align:center;margin-left:15px;
+}
+.NHSFormActionSelectedLabelForApproval {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none;text-align:left;
+}
+.NHSFormActionUnSelectedLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSFormActionSelectedReadable A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSFormactionUnSelectedLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSFormactionUnSelectedLabel A {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; TEXT-INDENT: 5px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSVEFormReadable1 {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.NHSEPRFormReadableError {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #c00000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.NHSVEFormErrorMessage {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #c00000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.NHSVEFormErrorRow {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #c00000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.NHSVEFormReadable1 {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.NHSVEFormReadable1Bold {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.FormEditable {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 80%; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; COLOR: #000000; PADDING-TOP: 1px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.FormEditableDescription {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-WEIGHT: normal; FONT-SIZE: 80%; PADDING-BOTTOM: 1px; VERTICAL-ALIGN: middle; WIDTH: 350px; COLOR: #000000; PADDING-TOP: 1px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.eprbutton {
+	BORDER-RIGHT: #666 1px solid; BORDER-TOP: #999 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 70%; VERTICAL-ALIGN: text-top; BORDER-LEFT: #999 1px solid; COLOR: #333; BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.NHSDataHeader {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; COLOR: #000000; PADDING-TOP: 3px; FONT-STYLE: normal; FONT-FAMILY: arial,helvetica; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.NHSTabSelectedWorkArea {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #555555; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSTabUnselectedWorkArea {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #d1d1d1; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSLabel14WhiteBg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: medium; PADDING-BOTTOM: 0px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.NHSLabel12WhiteBg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: small; PADDING-BOTTOM: 0px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.NHSLabel12WhiteBgBold {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: small; PADDING-BOTTOM: 0px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-ALIGN: justify; TEXT-DECORATION: none
+}
+.NHSWAFrameWelcomeTitle2 {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: top; WIDTH: 100%; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSWAFrameWelcomeTitle2 {
+	VERTICAL-ALIGN: top; WIDTH: 100%; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSWAFrameBTLogo {
+	VERTICAL-ALIGN: top; WIDTH: 100%; TEXT-ALIGN: right
+}
+.NHSTabUnselected {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #99ccff; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.FormTopContainer {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-LEFT-COLOR: #ffffff; BORDER-BOTTOM-WIDTH: 0px; BORDER-BOTTOM-COLOR: #ffffff; VERTICAL-ALIGN: top; BORDER-TOP-COLOR: #ffffff; BACKGROUND-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 0px; BORDER-RIGHT-COLOR: #ffffff
+}
+.NHSTopFrameWelcomeTitle {
+	FONT-WEIGHT: normal; FONT-SIZE: 26px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.NHSTabSelectedWhiteBg {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSTabSelected {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #0000ff; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSTabSelected A {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #ffffff; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #0000ff; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.NHSWelcomeBarLabel {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: bottom; COLOR: #000000; LINE-HEIGHT: 20px; FONT-STYLE: normal; FONT-FAMILY: arial; HEIGHT: 20px; BACKGROUND-COLOR: #99ccff; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.PageLinkAHref {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+.PageLinkAHref A {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: none
+}
+.PageLinkAHref A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: arial; BACKGROUND-COLOR: #eeeeee; TEXT-DECORATION: underline
+}
+.NHSEPRFormManFieldInd {
+	FONT-WEIGHT: bold; FONT-SIZE: small; VERTICAL-ALIGN: middle; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.InvalidPageBlueMessage {
+	background-color: #0066cc; color: white; font-family: arial, sans-serif; font-size: 80%; font-weight: bold; text-align: left; padding-bottom:2px; padding-top:2px; width: 100%;
+}
+.topTitle{
+	font-family: arial,sans-serif; 
+	font-weight: normal; 
+	color: black; 
+	font-size: 130%; 
+}
+.labelStyleForText
+{
+	background:transparent;	
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-right: 0px;
+}
+.NewNHSTitle{
+   FONT-WEIGHT: normal; FONT-SIZE: 150%; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial, Sans-Serif; TEXT-ALIGN: left; TEXT-DECORATION: none;
+}
+.NewNHSTitle1{
+   FONT-WEIGHT: normal; FONT-SIZE: 120%; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: arial, Sans-Serif; TEXT-ALIGN: left; TEXT-DECORATION: none;
+}

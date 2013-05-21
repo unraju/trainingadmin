@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="loginForm" type="common.struts.actionforms.user.LoginForm" />
+		<form-bean name="forgotPwdForm" type="common.struts.actionforms.user.ForgotPwdForm" />
+		<form-bean name="changePwdForm" type="common.struts.actionforms.user.ChangePwdForm" />
+
+		<form-bean name="userForm" type="common.struts.actionforms.user.UserForm" />
+		<form-bean name="userRoleForm" type="common.struts.actionforms.user.UserRoleForm" />
+		<form-bean name="activityForm" type="common.struts.actionforms.user.ActivityForm" />
+		<form-bean name="searchUserForm" type="common.struts.actionforms.user.SearchUserForm" />
+		<form-bean name="searchRoleForm" type="common.struts.actionforms.user.SearchRoleForm" />
+
+		<form-bean name="configDataForm" type="cricket.struts.actionforms.common.ConfigDataForm" />
+
+		<form-bean name="playerForm" type="cricket.struts.actionforms.team.PlayerForm" />
+		<form-bean name="coreTeamForm" type="cricket.struts.actionforms.team.CoreTeamForm" />
+		<form-bean name="userTeamForm" type="cricket.struts.actionforms.team.UserTeamForm" />
+		<form-bean name="teamSheduleForm" type="cricket.struts.actionforms.team.TeamSheduleForm" />
+
+		<form-bean name="sctNewsForm" type="cricket.struts.actionforms.common.SCTNewsForm" />
+
+		<form-bean name="Quiz" type="quiz.spring.form.QuizTO" />
+
+		<!-- Expensive ActionForms Start -->
+		<form-bean name="viewExpForm" type="expenditure.actionform.ViewExpActionForm" />
+		<form-bean name="addExpForm" type="expenditure.actionform.AddExpActionForm" />
+		<form-bean name="monthlyExpForm" type="expenditure.actionform.MonthlyExpActionForm" />
+		<form-bean name="annualExpForm" type="expenditure.actionform.MonthlyExpActionForm" />
+
+		<form-bean name="staticForm" type="expenditure.actionform.StaticDataForm"></form-bean>
+
+		<!-- Expensive ActionForms End -->
+
+	</form-beans>
+
+	<global-forwards>
+		<forward name="invalidSession" path="/forward.jsp">
+		</forward>
+		<forward name="notSignedIn" path="tilesLoginPage">
+		</forward>
+	</global-forwards>
+
+	<action-mappings>
+
+		<!-- ################### User Related Mappings #################### -->
+		<!-- >>>>>>>>> Login User Start <<<<<<<<< -->
+
+		<action path="/prelogin" scope="request" name="loginForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesLoginPage" />
+			<forward name="error" path="/error.jsp" />
+		</action>
+
+		<action path="/ipl2011" scope="request" name="loginForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesIPL12Index" />
+			<forward name="error" path="/error.jsp" />
+		</action>
+
+		<action path="/wc2011" scope="request" name="loginForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesWCIndex" />
+			<forward name="error" path="/error.jsp" />
+		</action>
+
+		<action path="/login" scope="request" name="loginForm" validate="true"
+			type="common.struts.actions.user.LoginAction" input="tilesLoginPage">
+			<forward name="success" path="/forward.jsp" />
+			<forward name="errorMessage" path="tilesLoginPage" />
+			<forward name="error" path="/error.jsp" />
+		</action>
+
+		<action path="/preforgotpwd" scope="request" name="forgotPwdForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesForgotPwd" />
+		</action>
+
+		<action path="/forgotpwd" scope="request" name="forgotPwdForm" validate="true"
+			type="common.struts.actions.user.ForGotPwdAction" input="tilesForgotPwd">
+			<forward name="success" path="tilesForgotPwd" />
+			<forward name="errorMessage" path="tilesForgotPwd" />
+			<forward name="cancel" path="tilesLoginPage" />
+		</action>
+
+		<action path="/prenewlogin" scope="request" name="userForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesNewRegistration" />
+		</action>
+
+		<action path="/newlogin" scope="request" name="userForm" validate="true"
+			type="common.struts.actions.user.NewLoginAction" input="tilesNewRegistration">
+			<forward name="success" path="tilesLoginPage" />
+			<forward name="error" path="tilesNewRegistration" />
+			<forward name="cancel" path="tilesLoginPage" />
+		</action>
+
+		<action path="/logout" scope="request" validate="false" type="common.struts.actions.user.LogoutAction">
+			<forward name="success" path="/forward.jsp" />
+			<forward name="error" path="/error.jsp" />
+		</action>
+
+		<action path="/prechangepwd" scope="request" validate="false" name="changePwdForm"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesChangePassword" />
+		</action>
+
+		<action path="/changepwd" scope="request" name="changePwdForm" validate="true"
+			type="common.struts.actions.user.ChangePwdAction" input="tilesChangePassword">
+			<forward name="success" path="tilesChangePassword" />
+			<forward name="cancel" path="tilesViewTeamsScore" />
+			<forward name="errorMessage" path="tilesChangePassword" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/preUpdateUserProfile" scope="request" validate="false" name="userForm"
+			type="common.struts.actions.user.UpdateUserProfileAction">
+			<forward name="success" path="tilesUpdateUserProfile" />
+		</action>
+
+		<action path="/updateUserProfile" scope="request" validate="true" name="userForm" input="tilesUpdateUserProfile"
+			type="common.struts.actions.user.UpdateUserProfileAction">
+			<forward name="success" path="tilesUpdateUserProfile" />
+			<forward name="errorMessage" path="tilesUpdateUserProfile" />
+		</action>
+
+		<!-- >>>>>>>>> Login User End <<<<<<<<< -->
+		<!-- >>>>>>>>> User Start <<<<<<<<< -->
+		<action path="/manageusers" scope="request" name="searchUserForm" validate="false"
+			type="common.struts.actions.user.ManageUsersAction">
+			<forward name="success" path="tilesManageUsers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/searchUsers" scope="request" name="searchUserForm" validate="false"
+			type="common.struts.actions.user.SearchUsersAction">
+			<forward name="success" path="tilesManageUsers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateUser" scope="request" name="userForm" validate="false"
+			type="common.struts.actions.user.PopulateUserDetailsAction">
+			<forward name="update" path="tilesUpdateUser" />
+			<forward name="validation" path="tilesManageUsers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateUser" scope="request" name="userForm" validate="false"
+			type="common.struts.actions.user.UpdateUserDetailsAction">
+			<forward name="sucess" path="tilesManageUsers" />
+			<forward name="cancel" path="tilesManageUsers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<!-- >>>>>>>>> User End <<<<<<<<< -->
+		<!-- >>>>>>>>> User Roles Start <<<<<<<<< -->
+
+		<action path="/manageroles" scope="request" name="searchRoleForm" validate="false"
+			type="common.struts.actions.user.ManageRolesAction">
+			<forward name="success" path="tilesManageRoles" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/searchRoles" scope="request" name="searchRoleForm" validate="false"
+			type="common.struts.actions.user.SearchRolesAction">
+			<forward name="success" path="tilesManageRoles" />
+			<forward name="add" path="tilesUpdateRole" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateRole" scope="request" name="userRoleForm" validate="false"
+			type="common.struts.actions.user.PopulateRoleDetailsAction">
+			<forward name="update" path="tilesUpdateRole" />
+			<forward name="delete" path="tilesManageRoles" />
+			<forward name="validation" path="tilesManageRoles" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateRole" scope="request" name="userRoleForm" validate="false"
+			type="common.struts.actions.user.UpdateRoleDetailsAction">
+			<forward name="sucess" path="tilesManageRoles" />
+			<forward name="cancel" path="tilesManageRoles" />
+			<forward name="error" path="tilesError" />
+		</action>
+		<!-- >>>>>>>>> User Roles End <<<<<<<<< -->
+		<!-- >>>>>>>>> Activity Actions Start <<<<<<<<< -->
+		<action path="/manageactivities" scope="request" name="activityForm" validate="false"
+			type="common.struts.actions.user.ManageActivitiesAction">
+			<forward name="success" path="tilesManageActivities" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/addUpdateActivities" scope="request" name="activityForm" validate="false"
+			type="common.struts.actions.user.PopulateActivitiesDetailsAction">
+			<forward name="add" path="tilesAddActivity" />
+			<forward name="update" path="tilesUpdateActivities" />
+			<forward name="delete" path="tilesManageActivities" />
+			<forward name="validation" path="tilesManageActivities" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateActivities" scope="request" name="activityForm" validate="false"
+			type="common.struts.actions.user.UpdateActivitiesDetailsAction">
+			<forward name="sucess" path="tilesManageActivities" />
+			<forward name="cancel" path="tilesManageActivities" />
+			<forward name="error" path="tilesError" />
+		</action>
+		<action path="/addActivity" scope="request" name="activityForm" validate="true" input="tilesManageActivities"
+			type="common.struts.actions.user.AddActivityDetailsAction">
+			<forward name="sucess" path="tilesManageActivities" />
+			<forward name="cancel" path="tilesManageActivities" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/error" scope="request" name="activityForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesError" />
+		</action>
+		<!-- >>>>>>>>> Activity Actions End <<<<<<<<< -->
+
+		<!-- >>>>>>>>> Players Actions Start <<<<<<<<< -->
+		<action path="/preManagePlayers" scope="request" validate="false" name="playerForm"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesManagePlayers" />
+			<forward name="error" path="tilesManagePlayers" />
+		</action>
+
+		<action path="/managePlayers" scope="request" validate="false" name="playerForm"
+			type="cricket.struts.actions.player.ManagePlayersAction">
+			<forward name="populateSearchedPlayers" path="tilesManagePlayers" />
+			<forward name="addUpdatePlayer" path="tilesAddUpdatePlayer" />
+			<forward name="error" path="tilesManagePlayers" />
+		</action>
+
+		<action path="/updatePlayer" scope="request" validate="true" input="tilesAddUpdatePlayer" name="playerForm"
+			type="cricket.struts.actions.player.UpdatePlayersAction">
+			<forward name="success" path="tilesManagePlayers" />
+			<forward name="playeradded" path="tilesAddUpdatePlayer" />
+			<forward name="cancel" path="tilesManagePlayers" />
+			<forward name="validation" path="tilesAddUpdatePlayer" />
+		</action>
+
+		<!-- >>>>>>>>> Players Actions End <<<<<<<<< -->
+
+
+		<!-- ################### User Related Mappings End #################### -->
+
+
+		<action path="/viewRules" scope="request" name="coreTeamForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesViewRules" />
+			<forward name="cancel" path="tilesViewRules" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/manageCoreTeams" scope="request" name="coreTeamForm" validate="false"
+			type="cricket.struts.actions.team.ManageCoreTeamsAction">
+			<forward name="success" path="tilesManageCoreTeams" />
+			<forward name="cancel" path="tilesManageCoreTeams" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewCoreTeams" scope="request" name="coreTeamForm" validate="false"
+			type="cricket.struts.actions.team.ViewCoreTeamDetailsAction">
+			<forward name="success" path="tilesViewCoreTeams" />
+			<forward name="back" path="tilesViewCoreTeams" />
+			<forward name="View" path="tilesViewCoreTeams" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/prepopulateCoreTeam" scope="request" name="coreTeamForm" validate="false"
+			type="cricket.struts.actions.team.PopulateCoreTeamDetailsAction">
+			<forward name="add" path="tilesUpdateCoreTeam" />
+			<forward name="update" path="tilesUpdateCoreTeam" />
+			<forward name="delete" path="tilesManageCoreTeams" />
+			<forward name="viewValidation" path="tilesViewCoreTeams" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateCoreTeams" scope="request" name="coreTeamForm" validate="true" input="tilesUpdateCoreTeam"
+			type="cricket.struts.actions.team.UpdateCoreTeamDetailsAction">
+			<forward name="sucess" path="tilesManageCoreTeams" />
+			<forward name="cancel" path="tilesManageCoreTeams" />
+			<forward name="back" path="tilesViewCoreTeams" />
+			<forward name="error" path="tilesError" />
+			<forward name="errorMessage" path="tilesUpdateCoreTeam" />
+
+		</action>
+
+		<action path="/manageUserTeam" scope="request" name="userTeamForm" validate="false"
+			type="cricket.struts.actions.team.ManageUserTeamAction">
+			<forward name="success" path="tilesManageUserTeam" />
+			<forward name="cancel" path="tilesManageUserTeam" />
+			<forward name="createTeam" path="tilesCreateUserTeam" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateUserTeam" scope="request" name="userTeamForm" validate="false"
+			type="cricket.struts.actions.team.PopulateUserTeamAction">
+			<forward name="update" path="tilesCreateUserTeam" />
+			<forward name="changePlayer" path="tilesChangeTeamPlayer" />
+			<forward name="cancel" path="tilesManageUserTeam" />
+			<forward name="validation" path="tilesManageUserTeam" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/createUserTeam" scope="request" name="userTeamForm" validate="false"
+			type="cricket.struts.actions.team.CreateUserTeamDetailsAction">
+			<forward name="success" path="/forward.jsp" />
+			<forward name="cancel" path="tilesManageUserTeam" />
+			<forward name="errorMessage" path="tilesCreateUserTeam" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+
+		<action path="/changeTeamPlayer" scope="request" name="playerForm" validate="false"
+			type="cricket.struts.actions.team.ChangeTeamPlayerAction">
+			<forward name="success" path="/forward.jsp" />
+			<forward name="cancel" path="tilesManageUserTeam" />
+			<forward name="errorMessage" path="tilesChangeTeamPlayer" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+
+		<action path="/manageShedule" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.ManageTeamSheduleAction">
+			<forward name="success" path="tilesManageTeamShedule" />
+			<forward name="cancel" path="tilesManageTeamShedule" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateTeamShedule" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.PopulateTeamSheduleAction">
+			<forward name="success" path="tilesUpdateTeamShedule" />
+			<forward name="cancel" path="tilesUpdateTeamShedule" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateTeamShedule" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.UpdateTeamSheduleAction">
+			<forward name="success" path="tilesManageTeamShedule" />
+			<forward name="cancel" path="tilesManageTeamShedule" />
+			<forward name="errorMessage" path="tilesUpdateTeamShedule" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+
+		<action path="/manageTeamScores" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesManageMatchScores" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateAllMatchPlayers" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.PopulateAllMatchPlayersAction">
+			<forward name="success" path="tilesPopulateTeamPlayers" />
+			<forward name="validation" path="tilesManageMatchScores" />
+			<forward name="cancel" path="tilesManageMatchScores" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/populateSelectedMatchPlayers" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.PopulateSelectedMatchPlayersAction">
+			<forward name="success" path="tilesUpdateMatchScores" />
+			<forward name="errorMessage" path="tilesPopulateTeamPlayers" />
+			<forward name="cancel" path="tilesManageMatchScores" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updatePlayersScores" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.UpdateMatchPlayerScoresAction">
+			<forward name="success" path="tilesManageMatchScores" />
+			<forward name="errorMessage" path="tilesUpdateMatchScores" />
+			<forward name="cancel" path="tilesPopulateTeamPlayers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewTeamShedule" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesViewTeamShedule" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewMatchScores" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.ViewMatchScoreDetailsAction">
+			<forward name="success" path="tilesViewMatchScores" />
+			<forward name="validation" path="tilesViewTeamShedule" />
+			<forward name="back" path="tilesViewTeamShedule" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/myTeamScore" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.MyTeamScoreDetailsAction">
+			<forward name="success" path="tilesMyTeamScore" />
+			<forward name="createTeam" path="tilesCreateUserTeam" />
+			<forward name="cancel" path="tilesPopulateTeamPlayers" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewLatestStandings" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesViewTeamsScore" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewSubstituteHistory" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.ViewSubstituteHistoryDetailsAction">
+			<forward name="success" path="tilesViewSubstituteHistory" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/generateScoreReport" scope="session" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.team.GenerateScoreReportAction">
+			<forward name="success" path="tilesGeneratedScoreReportsHistory" />
+			<forward name="forward" path="/forward.jsp" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/viewBestPlayers" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesViewBestPlayers" />
+		</action>
+
+		<action path="/viewPlayerMatchScores" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.player.ViewPlayerMatchScoresAction">
+			<forward name="success" path="tilesViewPlayerMatchScores" />
+		</action>
+
+		<action path="/viewUserPlayerMatchScores" scope="request" name="teamSheduleForm" validate="false"
+			type="cricket.struts.actions.player.ViewUserPlayerMatchScoresAction">
+			<forward name="success" path="tilesViewPlayerMatchScores" />
+		</action>
+
+		<action path="/manageSCTNews" scope="request" name="sctNewsForm" validate="false"
+			type="cricket.struts.actions.common.ManageSCTNewsAction">
+			<forward name="success" path="tilesManageSCTNews" />
+			<forward name="forward" path="/forward.jsp" />
+		</action>
+
+		<action path="/manageSerieses" scope="request" name="sctNewsForm" validate="false"
+			type="cricket.struts.actions.common.ForwardAction">
+			<forward name="success" path="tilesManageSerieses" />
+		</action>
+
+		<action path="/manageConfigData" scope="session" name="configDataForm" validate="false"
+			type="cricket.struts.actions.common.ManageConfigDataAction">
+			<forward name="success" path="tilesManageConfigData" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/updateConfigData" scope="session" name="configDataForm" validate="false"
+			type="cricket.struts.actions.common.UpdateConfigDataAction">
+			<forward name="success" path="tilesManageConfigData" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+
+
+		<action path="/manageQuiz" scope="request" name="Quiz" validate="false"
+			type="quiz.spring.controler.QuizController">
+			<forward name="success" path="tilesManageQuiz" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+
+		<!-- Expensive App action tags- Start -->
+
+		<action path="/add" scope="request" validate="false" name="addExpForm" type="expenditure.action.ForwardAction">
+			<forward name="success" path="tilesAddExp" />
+		</action>
+
+		<action path="/monthly_reports" scope="request" validate="false" name="monthlyExpForm"
+			type="expenditure.action.ForwardAction">
+			<forward name="success" path="tilesMonthlyExp" />
+			<forward name="errorMessage" path="tilesMonthlyExp" />
+		</action>
+
+		<action path="/anual_reports" scope="request" validate="false" name="annualExpForm"
+			type="expenditure.action.ForwardAction">
+			<forward name="success" path="tilesYearlyExp" />
+		</action>
+
+		<action path="/view" scope="request" validate="false" name="viewExpForm" type="expenditure.action.ForwardAction">
+			<forward name="success" path="tilesViewExp" />
+		</action>
+
+		<action path="/viewexp" scope="request" name="viewExpForm" validate="false"
+			type="expenditure.action.ViewExpAction">
+			<forward name="success" path="tilesViewExp" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/editExp" scope="request" name="addExpForm" validate="false" input="tilesViewExp"
+			type="expenditure.action.EditExpAction">
+			<forward name="error" path="tilesError" />
+			<forward name="validation" path="tilesViewExp" />
+			<forward name="edit" path="tilesUpdateExp" />
+			<forward name="delete" path="tilesViewExp" />
+		</action>
+
+		<action path="/updateExp" scope="request" name="addExpForm" input="tilesUpdateExp" validate="false"
+			type="expenditure.action.UpdateExpAction">
+			<forward name="error" path="tilesError" />
+			<forward name="success" path="tilesViewExp" />
+		</action>
+
+		<action path="/addexp" scope="request" name="addExpForm" input="tilesAddExp" validate="true"
+			type="expenditure.action.AddExpAction">
+			<forward name="success" path="tilesAddExp" redirect="true" />
+			<forward name="validation" path="tilesAddExp" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/monthlyexp" scope="request" name="monthlyExpForm" validate="false"
+			type="expenditure.action.MonthlyExpAction">
+			<forward name="success" path="tilesMonthlyExp" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/annualexp" scope="request" name="annualExpForm" validate="false"
+			type="expenditure.action.AnnualExpAction">
+			<forward name="success" path="tilesYearlyExp" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/asdata" scope="request" validate="false" name="viewExpForm" type="expenditure.action.ForwardAction">
+			<forward name="success" path="tilesStaticData" />
+		</action>
+		<action path="/addstatic" scope="request" name="staticForm" validate="true"
+			type="expenditure.action.StaticDataAction" input="tilesStaticData">
+			<forward name="success" path="tilesStaticData" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<action path="/addstatic" scope="request" name="staticForm" validate="true"
+			type="expenditure.action.StaticDataAction" input="tilesStaticData">
+			<forward name="success" path="tilesStaticData" />
+			<forward name="error" path="tilesError" />
+		</action>
+
+		<!-- Expensive App Action tags End -->
+
+	</action-mappings>
+
+	<message-resources parameter="ApplicationResources" null="false" />
+
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<!-- Path to XML definition file -->
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<!-- Set Module-awareness to true -->
+		<!-- set-property property="moduleAware" value="true" /> -->
+	</plug-in>
+
+
+
+
+</struts-config>
