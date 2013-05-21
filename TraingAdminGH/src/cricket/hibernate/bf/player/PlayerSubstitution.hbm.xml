@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.player.PlayerSubstitution"
+		table="player_substitution">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="status" />
+		<property name="pointsDeducted" column="points_Deducted" />
+
+		
+		<property name="substitionType" column="substition_Type" />
+		<property name="oldPlayerName" column="old_Player_Name" />
+		<property name="newPlayerName" column="new_Player_Name" />
+
+		<property name="userTeamId" column="user_team_id" />
+		<property name="seriesId" column="series_Id" />
+		
+		<property name="date">
+			<column name="date" sql-type="date" />
+		</property>
+
+		<!-- 
+			<many-to-one name="firstTeam"
+			class="cricket.hibernate.bf.team.CoreTeam" column="first_team"
+			cascade="none" />
+			<many-to-one name="secondTeam"
+			class="cricket.hibernate.bf.team.CoreTeam" column="second_Team"
+			cascade="none" />
+		-->
+
+
+	</class>
+
+</hibernate-mapping>

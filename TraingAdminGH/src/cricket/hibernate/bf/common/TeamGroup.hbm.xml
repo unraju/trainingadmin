@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.common.TeamGroup" table="teamgroup">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="groupName" length="20" />
+
+		
+	 	<list name="teams" cascade="all" lazy="true"> 
+				<key column="team_id"  />
+				 <list-index column="id" />
+				 <one-to-many
+	                 class="cricket.hibernate.bf.team.CoreTeam" />
+		 </list>
+			
+	
+
+	</class>
+
+</hibernate-mapping>

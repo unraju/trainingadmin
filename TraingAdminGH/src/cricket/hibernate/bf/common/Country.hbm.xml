@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.common.Country" table="country" optimistic-lock="version" >
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="country" length="20" />
+
+		<property name="shortName" length="20" />
+
+	</class>
+
+</hibernate-mapping>

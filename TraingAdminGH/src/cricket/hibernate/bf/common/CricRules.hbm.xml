@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.common.CricRules" table="cric_rules">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="rule" length="300" />
+
+		<property name="seriesId" length="2"/>
+
+		<property name="active" type="yes_no" access="field" />
+		<property name="scoreRule" type="yes_no" access="field" />
+	</class>
+
+</hibernate-mapping>

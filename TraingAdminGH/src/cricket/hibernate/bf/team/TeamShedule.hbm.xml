@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.team.TeamShedule"
+		table="match_shedule">
+
+		<id name="id" column="id" >
+			<generator class="increment" />
+		</id>
+
+	<property name="venue"  />
+	<property name="matchName" column="MATCH_NAME"/>
+	
+	<property name="firstTeamName" column="firstteam_name"/>
+	<property name="secondTeamName" column="secondTeam_name"/>
+	
+	<property name="firstTeamScore" column="firstTeam_Score"/>
+	<property name="secondTeamScore" column="secondTeam_Score"/>
+	<property name="matchResult" column="match_Result"/>
+	<property name="manOfMatch" column="manOfMatch"/>
+	<property name="firstTeamExtras" column="firstTeam_Extras"/>
+	<property name="secondTeamExtras" column="secondTeam_Extras"/>
+	<property name="matchShortName" column="match_Short_Name"/>
+	
+		<property name="date">
+			<column name="date" sql-type="date" />
+		</property>
+		<many-to-one name="firstTeam" class="cricket.hibernate.bf.team.CoreTeam" 
+			column="first_team"   />
+		<many-to-one name="secondTeam" class="cricket.hibernate.bf.team.CoreTeam"
+			column="second_Team"   
+             />
+      
+		<many-to-one name="series" class="cricket.hibernate.bf.common.Series"
+		column="series_id"  />
+	
+	</class>
+
+</hibernate-mapping>

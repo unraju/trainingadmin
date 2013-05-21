@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property> 
+			<property name="dialect">org.hibernate.dialect.MySQLDialect</property> <property 
+			name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property> 
+			<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/supercri_supercricteam?autoReconnect=true</property> 
+			<property name="hibernate.connection.username">supercri_unraju</property> 
+			<property name="hibernate.connection.password">unraju</property> <property 
+			name="hibernate.c3p0.idle_test_period">14400</property> <property name="hibernate.c3p0.timeout">25200</property> 
+			<property name="hibernate.c3p0.preferredTestQuery">select 1;</property> <property 
+			name="hibernate.c3p0.acquire_increment">1</property> <property name="hibernate.c3p0.max_statement">0</property> 
+			<property name="hibernate.c3p0.idle_test_period">14400</property> <property 
+			name="hibernate.c3p0.timeout">25200</property> <property name="hibernate.c3p0.preferredTestQuery">select 
+			1;</property> <property name="hibernate.c3p0.acquireIncrement">2</property> 
+			C3p0 <property name="hibernate.c3p0.acquire_increment">1</property> <property 
+			name="hibernate.c3p0.idle_test_period">300</property> <property name="hibernate.c3p0.timeout">120</property> 
+			<property name="hibernate.c3p0.max_size">25</property> <property name="hibernate.c3p0.min_size">1</property> 
+			<property name="hibernate.c3p0.max_statement">0</property> <property name="hibernate.c3p0.preferredTestQuery">select 
+			1;</property> <property name="show_sql">false</property> <property name="current_session_context_class">thread</property> 
+			<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> 
+			<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
+
+		<property name="current_session_context_class">thread</property>
+
+		<mapping resource="common/hibernate/bf/user/User.hbm.xml" />
+		<mapping resource="common/hibernate/bf/user/UserRole.hbm.xml" />
+		<mapping resource="common/hibernate/bf/user/Activity.hbm.xml" />
+
+		<mapping resource="cricket/hibernate/bf/team/CoreTeam.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/team/UserTeam.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/team/UserTeamPlayers.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/team/TeamShedule.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/team/ScoreReport.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/team/CoreTeamPlayers.hbm.xml" />
+
+
+
+		<mapping resource="cricket/hibernate/bf/player/Player.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/player/PlayerMatchScores.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/player/PlayerSubstitution.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/player/PlayerScores.hbm.xml" />
+
+		<mapping resource="cricket/hibernate/bf/common/Country.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/TeamGroup.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/Series.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/CricRules.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/SeriesType.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/SCTNews.hbm.xml" />
+		<mapping resource="cricket/hibernate/bf/common/SunSigns.hbm.xml" />
+
+
+		<mapping resource="common/hibernate/bf/user/ErrorLog.hbm.xml" />
+
+		<mapping resource="cricket/hibernate/bf/config/ConfigData.hbm.xml" />
+
+		<mapping resource="quiz/spring/hibernate/bf/Quiz.hbm.xml"/> 
+		<mapping resource="quiz/spring/hibernate/bf/UserQuiz.hbm.xml"/>
+
+
+		<!-- Expensive Project BF entries -->
+		<mapping resource="expenditure/businessfunction/Expenditure.hbm.xml" />
+		<mapping resource="expenditure/businessfunction/CashFlowType.hbm.xml" />
+		<mapping resource="expenditure/businessfunction/Itemtype.hbm.xml" />
+
+
+	</session-factory>
+
+</hibernate-configuration>
+

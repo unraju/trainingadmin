@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.player.Skill"
+		table="expenditure">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="name" length="20" />
+
+
+		<property name="country" length="20" />
+		<property name="active" length="20" />
+
+		<property name="score" length="10" />
+
+		<property name="skill" length="10" type="cricket.hibernate.bf.player.Skill" />
+
+
+	</class>
+
+</hibernate-mapping>

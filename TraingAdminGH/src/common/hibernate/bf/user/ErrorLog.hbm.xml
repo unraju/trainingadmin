@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+	<class name="common.hibernate.bf.user.ErrorLog" table="error_log">
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="userName" length="20" column="user" />
+		<property name="errorDescription" length="150" column="error_Description" />
+		<property name="stackTrace" length="1000" column="stack_Trace" />
+		<property name="time">
+			<column name="time" sql-type="date" />
+		</property>
+	</class>
+
+</hibernate-mapping>

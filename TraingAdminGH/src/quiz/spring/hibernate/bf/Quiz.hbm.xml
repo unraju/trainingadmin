@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="quiz.spring.hibernate.bf.Quiz" table="Quiz">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="quizNo" />
+		<property name="question" />
+		<property name="option1" />
+		<property name="option2" />
+		<property name="option3" />
+		<property name="option4" />
+		<property name="answer" />
+
+
+		<property name="date">
+			<column name="date" sql-type="date" />
+		</property>
+
+		<property name="live" type="yes_no" access="field" />
+
+	</class>
+
+</hibernate-mapping>

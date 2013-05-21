@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+		
+		<!--<property name="driverClassName" value="org.gjt.mm.mysql.Driver" />
+		<property name="url" value="jdbc:mysql://213.175.198.160:3306/supercri_sct?autoReconnect=true" />
+		<property name="username" value="supercri_unraju" />
+		<property name="password" value="unraju" />
+		
+			-->	
+		 
+		  
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ipl2012?autoReconnect=true" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />	
+	
+		<!-- 
+		<property name="driverClassName" value="org.gjt.mm.mysql.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/supercri_sct?autoReconnect=true" />
+		<property name="username" value="supercri_unraju" />
+		<property name="password" value="unraju" />
+			 -->
+	</bean>
+	
+	<!-- bean id="hibernateDao" class="demo.hibernate.HibernateEmployeeDao">
+		<property name="sessionFactory" ref="mySessionFactory"></property>	
+	</bean>
+ -->
+	<bean id="sessionFactory" class="common.spring.hibernate.SessionFactoryBean">
+		<property name="sessionFactory" ref="mySessionFactory"></property>	
+	</bean>
+	
+	<bean id="mySessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="exposeTransactionAwareSessionFactory"><value>false</value></property>
+		<property name="mappingLocations">
+			<list>
+					<value>classpath:common/hibernate/bf/user/User.hbm.xml</value>
+					<value>classpath:common/hibernate/bf/user/UserRole.hbm.xml</value>
+					<value>classpath:common/hibernate/bf/user/Activity.hbm.xml</value>
+					
+					<value>classpath:cricket/hibernate/bf/team/CoreTeam.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/team/UserTeam.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/team/UserTeamPlayers.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/team/TeamShedule.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/team/ScoreReport.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/team/CoreTeamPlayers.hbm.xml</value>
+					
+					
+					<value>classpath:cricket/hibernate/bf/player/Player.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/player/PlayerMatchScores.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/player/PlayerSubstitution.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/player/PlayerScores.hbm.xml</value>
+					
+					<!--
+					<value>classpath:cricket/hibernate/bf/common/PlayerODIScores.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/PlayerTestScores.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/PlayerScores.hbm.xml</value>-->
+					
+					
+					<value>classpath:cricket/hibernate/bf/common/Country.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/TeamGroup.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/Series.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/SeriesType.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/CricRules.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/SCTNews.hbm.xml</value>
+					<value>classpath:cricket/hibernate/bf/common/SunSigns.hbm.xml</value>
+					
+					<value>classpath:quiz/spring/hibernate/bf/Quiz.hbm.xml</value>
+					<value>classpath:quiz/spring/hibernate/bf/UserQuiz.hbm.xml</value>
+					<value>classpath:quiz/spring/hibernate/bf/QuizSchedule.hbm.xml</value>
+									
+					<value>classpath:cricket/hibernate/bf/config/ConfigData.hbm.xml</value>
+					<value>classpath:common/hibernate/bf/user/ErrorLog.hbm.xml</value>
+					
+					
+					<value>classpath:expenditure/businessfunction/Expenditure.hbm.xml</value>
+					<value>classpath:expenditure/businessfunction/CashFlowType.hbm.xml</value>
+					<value>classpath:expenditure/businessfunction/Itemtype.hbm.xml</value>
+					
+					
+					
+					
+				
+			</list>
+		</property>
+
+			<property name="hibernateProperties">
+			<value>
+				hibernate.current_session_context_class=thread
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				hibernate.hbm2ddl.auto=update
+				hibernate.show_sql=false
+				hibernate.cache.provider_class=org.hibernate.cache.NoCacheProvider
+				defaultAutoCommit=false
+				hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory
+				hibernate.max_fetch_depth=2
+			</value>
+		</property>
+	</bean>
+	
+	
+	
+</beans>

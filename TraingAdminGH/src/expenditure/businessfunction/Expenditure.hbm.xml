@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="expenditure.businessfunction.Expenditure" table="expenditure">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="item_no" length="20" />
+		
+		<property name="item_name" length="20" />
+
+
+		<property name="payment_mode" length="20" />
+		
+		<property name="card_type" length="20" />
+
+		<property name="amount" type="double" length="10" />
+
+		<property name="created_date">
+			<column name="created_date" sql-type="date" />
+		</property>
+		<property name="purchase_date">
+			<column name="purchase_date" sql-type="date" />
+		</property>
+
+		<many-to-one name="itemtype" class="expenditure.businessfunction.Itemtype"
+			column="item_type_fk" cascade="none" access="field" />
+
+			
+		<property name="userId" column="user_id" unique="true" />
+
+		<many-to-one name="loginUser" class="common.hibernate.bf.user.User"
+			insert="false" update="false" unique="true" column="user_id" />
+			
+
+	</class>
+
+</hibernate-mapping>

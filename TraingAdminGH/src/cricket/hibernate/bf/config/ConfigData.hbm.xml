@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.config.ConfigData"
+		table="config_data">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="coreTeamsCount" length="20" column="core_Teams_Count" />
+		<property name="coreTeamPlayersCount" length="20" column="core_team_Players_Count" />
+
+		<property name="freeSubstututions" length="20" column="free_substututions" />
+
+		<property name="updateUserTeamCutOffDate" length="20" column="update_UserTeam_CutOff_Date" />
+
+
+	</class>
+
+</hibernate-mapping>

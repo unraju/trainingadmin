@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+
+	<class name="common.hibernate.bf.user.User" table="users">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="name" length="20" />
+		<property name="gender" length="10" />
+		<property name="loginName" length="30" column="login_name" />
+		<property name="password" length="20" />
+		<property name="contactNo" length="20" column="phone_no" />
+		<property name="address" length="30" />
+		<property name="emailId" length="30" column="email" />
+		<property name="active"  type="yes_no" column="is_active"
+			access="field" />
+		<property name="mailFailed"  type="yes_no" column="mail_failed"
+			access="field" />
+			
+			<!--  had current series team -->
+		<property name="hadCSTeam"  type="yes_no" column="hadCSTeam"
+			access="field" />
+			
+			
+		<property name="count" length="4" />
+		
+		<property name="userRef" length="16" />
+			
+		<!-- 
+		<property name="acceptRules" type="yes_no" column="accept_rules"
+			access="field" />
+		 -->
+		<property name="dob">
+			<column name="dob" sql-type="date" />
+		</property>
+		<property name="createdDate">
+			<column name="created_date" sql-type="date" />
+		</property>
+		
+		<idbag name="userRoles" table="user_role_lnk" lazy="true"  ><!-- cascade="save-update,persist">  -->
+			<collection-id type="long" column="ID">
+				<generator class="increment" />
+			</collection-id>
+			<key column="user_id" not-null="true" />
+			<many-to-many order-by="priority" 
+				class="common.hibernate.bf.user.UserRole" column="role_id"  />
+		</idbag>
+	</class>
+</hibernate-mapping>

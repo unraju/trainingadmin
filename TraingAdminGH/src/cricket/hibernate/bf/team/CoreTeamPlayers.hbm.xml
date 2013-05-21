@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.team.CoreTeamPlayers"
+		table="core_team_player_lnk">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+ 
+		<property name="startDate">
+			<column name="start_date" sql-type="date" />
+		</property>
+		<property name="endDate">
+			<column name="end_date" sql-type="date" />
+		</property>
+
+		<property name="score" />
+		<property name="runs" />
+		<property name="balls" />
+		<property name="wickets" />
+		<property name="catches" />
+		<property name="centuries" length="3" />
+		<property name="halfCenturies" length="3" />
+		<property name="matches" length="2" />
+		<property name="fours" type="long"  length="2" />
+		<property name="sixers" type="long"  length="2" />
+	
+
+		<property name="active" type="yes_no" access="field" />
+		<property name="captain" type="yes_no" access="field" />
+
+		<property name="playerId" column="player_id"  unique="false" />
+		
+		<many-to-one name="player" insert="false" update="false"     unique="false"
+			not-null="true" column="player_id" />
+			
+		<property name="coreTeamId" column="coreTeam_Id" />
+			
+		<many-to-one name="coreTeam" insert="false" update="false"
+			not-null="true" column="coreTeam_Id" />
+
+	</class>
+
+</hibernate-mapping>

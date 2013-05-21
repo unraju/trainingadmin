@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration  xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+<!--  console appender -->
+  <appender name="CA" class="org.apache.log4j.ConsoleAppender">
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern"
+        value="%d{dd-MMM HH:mm:ss} %-5p %-30c{7} %n                %m%n" />
+    </layout>
+  </appender>
+
+<!--  rolling file appender -->
+  <appender name="RA" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="MyApp.log" />
+    <param name="MaxFileSize" value="20MB" />
+    <param name="MaxBackupIndex" value="30" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern" 
+        value="%d{dd-MMM HH:mm:ss} %-5p %-30c{7} %n                %m%n"  />
+    </layout>
+  </appender>
+
+  <appender name="PM" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="PatternsMatched.log" />
+    <param name="MaxFileSize" value="20MB" />
+    <param name="MaxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern"
+        value="%m"/>
+    </layout>
+  </appender>
+
+  <appender name="PNM" class="org.apache.log4j.RollingFileAppender">
+    <param name="file" value="PatternsNotMatched.log" />
+    <param name="MaxFileSize" value="20MB" />
+    <param name="MaxBackupIndex" value="1" />
+    <layout class="org.apache.log4j.PatternLayout">
+      <param name="ConversionPattern"
+        value="%m"/>
+    </layout>
+  </appender>
+  
+  <appender name="PRINTER" class="org.apache.log4j.RollingFileAppender">
+      <param name="file" value="Printer.log" />
+      <param name="MaxFileSize" value="20MB" />
+      <param name="MaxBackupIndex" value="1" />
+      <layout class="org.apache.log4j.PatternLayout">
+        <param name="ConversionPattern"
+          value="%m"/>
+      </layout>
+  </appender>
+
+<!--  functional level -->
+  
+  <logger name="patternsmatched" additivity="true">
+    <level value="debug" />    
+    <appender-ref ref="RA" />
+  </logger>  
+  <logger name="patternsnotmatched" additivity="true">
+    <level value="error" />    
+    <appender-ref ref="RA" />
+  </logger>  
+  
+  <logger name="com.bt.dao.impl.ErrorDAOImpl">
+    <level value="off" />     
+  </logger>
+
+  <logger name="ros.baseservices.framework.util.AbstractResourceHandler">
+    <level value="error" />     
+  </logger>
+
+  <logger name="com.bea">
+    <level value="error" />
+  </logger>
+  
+  <!-- 3rd party products  -->
+  <!-- apache -->
+  <logger name="org.apache">
+    <level value="off" />     
+  </logger>
+  <logger name="org.apache.beehive">
+    <level value="error" />  
+ </logger>
+  
+  <!-- get title debugging we ALWAYS need this on in all environments including LIVE -->
+   
+<!-- hibernate -->
+  
+	<!-- apache -->
+	<logger name="org.apache">
+		<level value="error" />
+	</logger>
+
+	<!-- hibernate -->
+	<logger name="org.hibernate">
+		<level value="error" />
+	</logger>
+
+	<logger name="org.hibernate.tool.hbm2ddl">
+		<level value="error" />
+	</logger>
+	<logger name="org.hibernate.SQL">
+		<level value="error" />
+	</logger>
+	<logger name="org.hibernate.connection">
+		<level value="error" />
+	</logger>
+	<logger name="org.hibernate.exception.GenericJDBCException">
+		<level value="error" />
+	</logger>
+	<logger name="org.hibernate.util.JDBCExceptionReporter">
+		<level value="error" />
+	</logger>
+	<logger name="cricket">
+		<level value="error" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="error" />
+	</logger>
+
+	<logger name="common.util">
+		<level value="error" />
+	</logger>
+	
+	<logger name="common.filters">
+		<level value="error" />
+	</logger>
+	<logger name="net.sf.ehcache">
+		<level value="error" />
+	</logger>
+	
+  
+
+  <root>
+		<priority value="debug" />
+    <appender-ref ref="CA" />
+    <appender-ref ref="RA" />
+  </root>
+
+</log4j:configuration>

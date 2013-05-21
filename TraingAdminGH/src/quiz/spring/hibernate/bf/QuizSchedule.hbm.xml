@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="quiz.spring.hibernate.bf.QuizSchedule" table="QuizSchedule">
+
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="startDate">
+			<column name="startDate" sql-type="timestamp" />
+		</property>
+
+		<property name="endDate">
+			<column name="endDate" sql-type="timestamp" />
+		</property>
+
+		<property name="createdDate">
+			<column name="createdDate" sql-type="timestamp" />
+		</property>
+		
+		<property name="live" type="yes_no" access="field" />
+
+		<property name="quizNo" column="quizNo" unique="true" />
+
+		<many-to-one name="todayQuiz" class="quiz.spring.hibernate.bf.Quiz"
+			insert="false" update="false" unique="true" column="quiz_id" />
+
+
+	</class>
+
+</hibernate-mapping>

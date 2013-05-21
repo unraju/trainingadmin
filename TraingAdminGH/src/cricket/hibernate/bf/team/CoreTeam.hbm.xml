@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.team.CoreTeam"
+		table="core_teams">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="name" length="20" />
+		<property name="city" length="20" />
+		<property name="createdDate">
+			<column name="created_date" sql-type="date" />
+		</property>
+		
+		<property name="owner" length="20" access="field"/>
+		<property name="code" length="5" />
+		<property name="active" type="yes_no" access="field" />
+		
+		<property name="playersCount"   column="players_count" length="2"  />
+		
+		
+		<many-to-one name="teamGroup" class="cricket.hibernate.bf.common.TeamGroup"
+		column="group_id"  />
+		
+		<many-to-one name="series" class="cricket.hibernate.bf.common.Series"
+		column="series_id" />
+		
+		<many-to-one name="country" class="cricket.hibernate.bf.common.Country"
+		column="country_id" />
+		
+		
+		<list name="players" inverse="true" > 
+			<key column="coreTeam_Id" />
+			<list-index column="id"  />
+			<one-to-many 
+				class="cricket.hibernate.bf.team.CoreTeamPlayers"  />
+		</list>
+
+		  
+	</class>
+
+</hibernate-mapping>

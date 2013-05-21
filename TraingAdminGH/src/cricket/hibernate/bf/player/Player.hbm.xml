@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.player.Player" table="players">
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="name" length="20" />
+
+
+		<many-to-one name="country" class="cricket.hibernate.bf.common.Country"
+		column="country_id"   />
+		
+		<property name="active" type="yes_no" access="field" />
+		<property name="selected" type="yes_no" access="field" />
+
+		<!-- property name="score" length="10" /> -->
+
+		<property name="matches" length="10" />
+		<property name="runs" length="10" />
+		<property name="wickets" length="10" />
+		<property name="catches" length="10" />
+		<property name="centuries" length="3" />
+		<property name="halfCenturies" length="3" />
+		  <property name="skill" />
+	  
+		<list name="playerScores" inverse="true" lazy="true" 
+			outer-join="false">
+		<key column="player_id" />
+		<list-index column="id" />
+		<one-to-many class="cricket.hibernate.bf.player.PlayerScores" />
+		</list>
+		
+	</class>
+
+</hibernate-mapping>

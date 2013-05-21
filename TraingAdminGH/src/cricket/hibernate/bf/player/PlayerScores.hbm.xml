@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cricket.hibernate.bf.player.PlayerScores" table="players_scores" >
+
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+
+		<property name="matches" length="4" />
+		<property name="runs" length="4" />
+		<property name="wickets" length="4" />
+		<property name="catches" length="4" />
+		<property name="centuries" length="4" />
+		<property name="halfCenturies" length="4" />
+
+		<property name="seriesTypeId" column="series_type_id"   />
+		
+		<many-to-one name="seriesType" class="cricket.hibernate.bf.common.SeriesType" insert="false" update="false"
+		column="series_type_id"   />
+				
+		<many-to-one name="player" class="cricket.hibernate.bf.player.Player"
+		column="player_id"   />
+
+	</class>
+
+</hibernate-mapping>
