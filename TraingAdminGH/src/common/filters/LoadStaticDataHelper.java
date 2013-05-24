@@ -20,7 +20,7 @@ import common.ehcache.elements.BestPlayersElement;
 import common.ehcache.elements.CoreTeamsElement;
 import common.ehcache.elements.CountriesElement;
 import common.ehcache.elements.CricRulesElement;
-import common.ehcache.elements.ExpensiveElement;
+
 import common.ehcache.elements.FrontPageSeriesDataElement;
 import common.ehcache.elements.SeriesElement;
 import common.ehcache.elements.SunSignsElement;
@@ -58,10 +58,7 @@ import cricket.struts.actionforms.team.PlayerForm;
 import cricket.struts.actionforms.team.TeamSheduleForm;
 import cricket.struts.actionforms.team.UserTeamForm;
 import cricket.struts.helpers.team.ManageTeamDBHelper;
-import expenditure.actionform.CashFlowTypeTO;
-import expenditure.actionform.ItemTypeTO;
-import expenditure.businessfunction.CashFlowType;
-import expenditure.businessfunction.Itemtype;
+
 
 public class LoadStaticDataHelper {
 	Session session = null;
@@ -164,28 +161,7 @@ public class LoadStaticDataHelper {
 
 	}
 
-	private List<ItemTypeTO> getItemTypeData() {
-		Criteria criteria = session.createCriteria(Itemtype.class);
-		criteria.addOrder(Order.asc("id"));
-		List<Itemtype> list = criteria.list();
-		List<ItemTypeTO> itemTypes = new ArrayList<ItemTypeTO>();
-		for (Itemtype itemtype : list) {
-			itemTypes.add(itemtype.getActionForm());
-		}
-		return itemTypes;
-	}
-
-	private List<CashFlowTypeTO> getCashFlowData() {
-		Criteria criteria = session.createCriteria(CashFlowType.class);
-		criteria.addOrder(Order.asc("id"));
-		List<CashFlowType> list = criteria.list();
-		List<CashFlowTypeTO> cashFlowTypeTOs = new ArrayList<CashFlowTypeTO>();
-		for (CashFlowType cashFlowType : list) {
-			cashFlowTypeTOs.add(cashFlowType.getActionForm());
-		}
-		return cashFlowTypeTOs;
-	}
-
+	
 	public Map<String, Object> publishSeriesDetail(Long seriesId) {
 		session = HibernateUtil.getSession();
 		Map<String, Object> map = new HashMap<String, Object>();
@@ -483,8 +459,8 @@ public class LoadStaticDataHelper {
 	public void loadExpenditureCacheDetails(ActionXmlCacheManager cache) {
 
 		this.session = HibernateUtil.getSession();
-		ExpensiveElement expensiveElement = new ExpensiveElement(getItemTypeData(), getCashFlowData());
-		cache.put(expensiveElement.EXPENSIVE_DATA, expensiveElement);
+		//ExpensiveElement expensiveElement = new ExpensiveElement(getItemTypeData(), getCashFlowData());
+		//cache.put(expensiveElement.EXPENSIVE_DATA, expensiveElement);
 
 	}
 

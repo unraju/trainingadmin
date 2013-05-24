@@ -14,7 +14,7 @@ import common.ehcache.elements.BestPlayersElement;
 import common.ehcache.elements.CoreTeamsElement;
 import common.ehcache.elements.CountriesElement;
 import common.ehcache.elements.CricRulesElement;
-import common.ehcache.elements.ExpensiveElement;
+
 import common.ehcache.elements.FrontPageSeriesDataElement;
 import common.ehcache.elements.LiveMatchScheduleElement;
 import common.ehcache.elements.SctNewsElement;
@@ -41,8 +41,7 @@ import cricket.struts.actionforms.team.CurrentMatchSheduleForm;
 import cricket.struts.actionforms.team.PlayerForm;
 import cricket.struts.actionforms.team.TeamSheduleForm;
 import cricket.struts.actionforms.team.UserTeamForm;
-import expenditure.actionform.CashFlowTypeTO;
-import expenditure.actionform.ItemTypeTO;
+
 
 public class RetriveContextData {
 	protected ICache cache = null;
@@ -279,15 +278,5 @@ public class RetriveContextData {
 		return sunSignsElement.getSunSignForms();
 	}
 
-	public List<ItemTypeTO> getItemTypes() throws CacheElementNotFound {
-		cache = ActionXmlCacheManager.getInstance(Constants.EXPENDITURE_CACHE);
-		ExpensiveElement expensiveElement = (ExpensiveElement) cache.get(ExpensiveElement.EXPENSIVE_DATA);
-		return expensiveElement.getItemTypes();
-	}
 
-	public List<CashFlowTypeTO> getCashFlowTypes() throws CacheElementNotFound {
-		cache = ActionXmlCacheManager.getInstance(Constants.EXPENDITURE_CACHE);
-		ExpensiveElement expensiveElement = (ExpensiveElement) cache.get(ExpensiveElement.EXPENSIVE_DATA);
-		return expensiveElement.getCashFlowTypes();
-	}
 }
